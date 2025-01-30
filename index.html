@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기소개</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            color: #fff;
+            line-height: 1.6;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .light-theme {
+            background-color: #ffffff;
+            color: #000;
+        }
+
+        .container {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 3px solid rgba(0, 0, 0, 0.5);
+
+            display: block;
+            margin: 0 auto 20px;
+            animation: fadeIn 2s;
+            object-fit: cover;
+            object-position:0 10% 
+        }
+
+
+
+
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: inherit;
+            transition: transform 0.3s;
+        }
+
+        .theme-toggle:hover {
+            transform: scale(1.1);
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+            text-align: left;
+            max-width: 900px;
+            margin: 20px auto;
+            transition: transform 0.3s;
+        }
+
+        .section:hover {
+            transform: scale(1.02);
+        }
+
+        .light-theme .section {
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .section h2 {
+            display: flex;
+            align-items: center;
+        }
+
+        .section h2 i {
+            margin-right: 10px;
+            color: #f39c12;
+        }
+
+        .skills {
+            text-align: center;
+        }
+
+        .skills span {
+            display: inline-block;
+            background: #444;
+            padding: 8px 12px;
+            border-radius: 5px;
+            margin: 5px;
+            transition: transform 0.3s;
+        }
+
+        .skills span:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">
+        <i class="bi bi-moon"></i>
+    </button>
+
+    <div class="container">
+        <header class="header">
+            <img src="jay.png" alt="프로필 사진" class="profile-img">
+            <h1>안녕하세요!🖐️ <br>
+            소프트웨어 QA, 박재윤입니다.
+            </h1>
+            <p> 소프트웨어 QA | 게임 테스터 | 자동화 엔지니어</p>
+        </header>
+
+        <section class="section">
+            <h2><i class="bi bi-person"></i> 자기소개</h2>
+            <p>안녕하세요! 저는 2년의 경력을 가진 소프트웨어 QA 엔지니어입니다. <br> 
+                아웃소싱 테스터와 게임 QA 경험을 바탕으로, 테스트 및 자동화에 대한 깊은 이해를 갖추고 있습니다.  <br>
+                특히, 테스트 자동화와 품질 향상을 위한 최적화에 열정을 가지고 있으며,  
+                효율적인 QA 프로세스를 구축하는 것에 집중하고 있습니다.</p>
+             
+        </section>
+
+        <section class="section">
+            <h2><i class="bi bi-tools"></i> 기술 스택</h2>
+            <div class="skills">
+
+                <span>
+                    <img src="appium_logo.png" alt="Appium Logo" class="tech-logo"> Appium
+                </span>
+                <span>
+                    <img src="python_logo.png" alt="Python Logo" class="tech-logo"> Python
+                </span>
+                
+                <span><i class="bi bi-terminal"></i> CMD script</span>
+                <span><i class="bi bi-wrench"></i> Test Automation</span>
+                <span><i class="bi bi-controller"></i> Game Testing</span>
+                <span><i class="bi bi-graph-up"></i> Process Efficiency</span>
+                <span><i class="bi bi-android"></i> ADB</span>
+            </div>
+        </section>
+        
+        <style>
+            .tech-logo {
+                width: 16px;
+                height: 16px;
+                margin-right: 5px;
+                vertical-align: middle;
+            }
+        </style>
+        
+
+        <section class="section">
+            <h2>
+                <i class="bi bi-briefcase"></i> 경력
+                <div class="company-logos">
+                    <a href="https://www.wisewires.com" target="_blank" class="logo-box">
+                        <img src="wise_wires_logo.png" alt="Wise Wires">
+                    </a>
+                    <a href="https://www.pearlabyss.com" target="_blank" class="logo-box">
+                        <img src="pearl_abyss_logo.png" alt="Pearl Abyss">
+                    </a>
+                    <a href="https://www.nhnservice.com/" target="_blank" class="logo-box">
+                        <img src="nhn_service_logo.png" alt="NHN Service">
+                    </a>
+                </div>
+                
+            </h2>
+            <ul>
+                <li><strong>2022.03 - 2022.12</strong> (10개월) : Wise Wires - 삼성 모바일 디바이스 테스터</li> 
+                <li><strong>2023.01 - 2023.03</strong> (3개월) : Pearl Abyss - 게임 QA Beginner 인턴</li> 
+                <li><strong>2024.01 - 2024.12</strong> (12개월) : NHN Service - 모바일 게임 테스트 엔지니어</li> 
+            </ul>
+        </section>
+        
+        <style>
+.company-logos {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 1);
+    transition: transform 0.2s ease-in-out, background 0.3s;
+}
+
+.logo-box img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    transition: transform 0.2s ease-in-out;
+}
+
+.logo-box:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+        </style>
+        
+        
+
+        <section class="section">
+            <h2><i class="bi bi-folder"></i> 주요 프로젝트</h2>
+            <ul>
+                <li><strong>와이즈 와이어즈</strong> - ADB와 PyQt5를 활용한 테스트 자동화로 휴먼 에러를 최소화</li>
+                <li><strong>펄어비스 검은사막 M</strong> - 다양한 테스트 기법을 활용한 실무 경험 </li>
+                <li><strong>NHN 카지노 게임</strong> - 반복 작업 자동화를 통해 데이터 누적 프로세스 개선</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2><i class="bi bi-award"></i> 자격증</h2>
+            <table class="cert-table">
+                <thead>
+                    <tr>
+                        <th>자격증</th>
+                        <th>단계</th>
+                        <th>취득일</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>정보처리기능사</td>
+                        <td>*</td>
+                        <td>2017.10</td>
+                    </tr>
+                    <tr>
+                        <td>ISTQB</td>
+                        <td>CTFL</td>
+                        <td>2024.04</td>
+                    </tr>
+                    <tr>
+                        <td>ISTQB</td>
+                        <td>CT-GAMES</td>
+                        <td>2024.10</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <style>
+.cert-table {
+    width: auto; 
+    
+    margin-top: 5; 
+}
+
+.cert-table th, .cert-table td {
+    padding: 5px 10px; 
+    text-align: center; 
+    min-width: 100px; 
+}
+
+        
+            .cert-table th {
+                background: rgba(255, 255, 255, 0.2);
+                font-weight: bold;
+            }
+        
+            .cert-table td {
+                background: rgba(255, 255, 255, 0.1);
+            }
+        
+            .cert-table tr:hover td {
+                background: rgba(255, 255, 255, 0.3);
+            }
+        </style>
+        
+
+        <section class="section">
+            <h2><i class="bi bi-envelope"></i> 연락처</h2>
+            <p><strong>Email</strong> : 
+                <span class="copy-email" onclick="copyToClipboard('lossers0@gmail.com')">
+                    lossers0@gmail.com<i class="bi bi-copy"></i>
+                </span>
+            </p>
+            <div id="copy-message" class="copy-message">이메일이 복사되었습니다.</div>
+        </section>
+        
+        <style>
+            .copy-email {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        
+            .copy-email:hover {
+                color: #ffcc00;
+            }
+        
+            .copy-message {
+                display: none;
+                margin-top: 10px;
+                font-size: 14px;
+                color: #00ffcc;
+                background: rgba(0, 0, 0, 0.7);
+                padding: 8px 12px;
+                border-radius: 5px;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                white-space: nowrap;
+                animation: fadeOut 2s forwards;
+            }
+        
+            @keyframes fadeOut {
+                0% { opacity: 1; }
+                80% { opacity: 1; }
+                100% { opacity: 0; }
+            }
+        </style>
+        
+        <script>
+            function copyToClipboard(text) {
+                navigator.clipboard.writeText(text).then(() => {
+                    let message = document.getElementById('copy-message');
+                    message.style.display = 'block';
+        
+                    setTimeout(() => {
+                        message.style.display = 'none';
+                    }, 2000); // 2초 후 메시지 사라짐
+                }).catch(err => {
+                    console.error('복사 실패:', err);
+                });
+            }
+        </script>
+        
+        
+    </div>
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-theme');
+        }
+    </script>
+    <p class="footer-text">AI를 활용해 만든 페이지입니다.</p>
+
+    <style>
+        .footer-text {
+    text-align: center;
+    color: rgba(128, 128, 128, 0.7); 
+    font-size: 14px; 
+    margin-top: 30px; 
+}
+
+    </style>
+
+</body>
+</html>
